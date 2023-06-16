@@ -6,6 +6,7 @@
 * main - prints diffrent text according to number
 * 
 * Return: always(success)
+*/
 
 int main(void)
 {
