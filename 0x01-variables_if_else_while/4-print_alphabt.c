@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
-* main - prints the alphabet in lowercase
-* 
-* Return: always(success)
-*/
-
+  * main - Prints some letters of alphabet
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
 	char c;
