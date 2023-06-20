@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <main.h>
+
 #include <main.h>
 
 /*
@@ -13,6 +17,7 @@ int main(void)
 	_putchar('u');
 	_putchar('t');
 	_putchar('c');
+	_putchar('h');
 	_putchar('a');
         _putchar('r');
 	_putchar('\n');
