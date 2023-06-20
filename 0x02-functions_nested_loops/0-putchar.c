@@ -6,8 +6,15 @@
  * Return: always 0
  */
 
-int _putchar(void)
+int main(void)
 {
-	_putchar('_putchar\n');
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('a');
+        _putchar('r');
+	_putchar('\n');
 	return (0);
 }
