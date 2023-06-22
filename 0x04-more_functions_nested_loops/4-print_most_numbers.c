@@ -2,7 +2,7 @@
 
 
 /**
- * print_most_print - print 01356789
+ * print_most_numbers - print 01356789
  *
  * Return: void
  *
