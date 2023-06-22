@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * mul - multiplis of two integers
+ * mul - multiplies two integers
  * @a: first integer
  * @b: second integer
  * Return: addition of a and b
