@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat -  concatenates two strings
+ * _strncat - concatenates two strings
  * @dest: char
  * @src: chr
  * @n: int
@@ -26,7 +26,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		*dest = *src;
 	}
-	if (length1 n >= length)
+	if (length1 + n >= length)
 	{
 		*(dest + length) = '\0';
 	}
