@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strcat - append a string to another
+ * _strcat - concats 2 strings
  * @dest: char
- * @srcc: char
+ * @src: char
  *
  * Return: char
  *
@@ -11,7 +11,8 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int lenth = 0;
+	int length = 0;
+
 	while (*dest != '\0')
 	{
 		dest++;
