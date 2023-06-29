@@ -17,11 +17,9 @@ int _strcmp(char *s1, char *s2)
 		s1++;
 		s2++;
 		if (*s1 == '\0')
-		{
 			return (0);
-		}
-
 	}
 	comp = *s1 - *s2;
-	return (com);
+	return (comp);
+
 }
