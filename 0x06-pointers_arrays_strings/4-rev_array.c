@@ -23,4 +23,4 @@ void reverse_array(int *a, int n)
 		*b = *a;
 		*a = temp;
 	}
-}	
+}
