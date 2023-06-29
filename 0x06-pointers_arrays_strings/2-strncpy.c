@@ -1,24 +1,30 @@
 #include "main.h"
-
 /**
- * _strncpy - copies n bytes of src to dest
- * @dest: char
- * @src: char
- * @n: int
- *
- * Return: char
+ *_strncpy - copies n bytes of src to dest
+ *@dest: char
+ *@src: char;
+ *@n:int;
+ *Return: char
  */
-
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *temd = dest;
+char *tempd = dest;
 
-	int x;
+int x;
 
-	for (x = 0; x < n && *(src + x); x++)
-	{
-		*(tempd + x) = *(src + x);
 
-	}
-	return (dest);
+
+for (x = 0; x < n && *(src + x) ; x++)
+{
+	*(tempd + x) = *(src + x);
+}
+for (; x < n; x++)
+{
+	*(tempd + x) = '\0';
+}
+
+
+
+return (dest);
+
 }
