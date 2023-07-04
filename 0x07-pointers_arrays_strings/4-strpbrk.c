@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * _strpbrk - locates the first occurence in s of any of the bytes of accept
+ * _strpbrk - locates the first occurrence in s of any of the bytes of accept
  *
  * @accept: pointer to get the bytes
  * @s: string
  *
- * Return: a pointer to s or NULL if no bytes is found
+ * Return: a pointer to s or NULL if no byte is found
  */
-
 char *_strpbrk(char *s, char *accept)
 {
 	int a;
@@ -19,11 +18,8 @@ char *_strpbrk(char *s, char *accept)
 		for (b = 0; accept[b]; b++)
 		{
 			if (s[a] == accept[b])
-			{
 				return (&(s[a]));
-			}
 		}
-		return (0);
-
 	}
+	return (0);
 }
