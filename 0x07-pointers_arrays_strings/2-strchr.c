@@ -6,13 +6,13 @@
  * @s: a pointer given by main
  * @c: the char to look for
  *
- * description: returns the first occurance of that char in string
+ * description: returns the first occurance of the char c in string
  * Return: returns a pointer to the first occurance
  */
 
 char *_strchr(char *s, char c)
 {
-	int i =0;
+	int i = 0;
 
 
 	while (s[i] != c)
