@@ -10,7 +10,7 @@
  * Return: pointer to new string, or NULL on failure
  */
 
-char *str_concat(char *s1, char *s2)
+int **alloc_grid(int width, int height)
 {
 	char *cnct;
 
