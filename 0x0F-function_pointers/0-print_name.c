@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 
 /**
- * print_nae - short description
+ * print_name - short description
  *
  * Description: long description
  *
