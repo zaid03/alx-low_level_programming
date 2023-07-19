@@ -8,7 +8,6 @@
  * @name: name string
  * @f: function pointer
  *
- *
  * Return: return description
  */
 
