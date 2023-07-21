@@ -1,9 +1,8 @@
-#include "variadic_funstions.h"
+#include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
-
 /**
- * print_strings - entry point
+ * print_strings - Entry Point
  * @separator: comma space
  * @n: number of elements
  * Return: void
@@ -18,7 +17,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		sep = "";
 	else
 		sep = (char *) separator;
-	va_list(list, n);
+	va_start(list, n);
 
 	if (n > 0)
 		printf("%s", va_arg(list, char *));
