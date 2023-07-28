@@ -1,5 +1,9 @@
 #ifndef LINKLIST
 #define LINKLIST
+#include <stdarg.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 /**
  * struct list_s - singly linked list
@@ -19,7 +23,6 @@ typedef struct list_s
 	struct lsit_s *next;
 }list_t;
 
-#include <stdlib.h>
 int _putchar(char c);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
