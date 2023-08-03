@@ -11,7 +11,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int gfk = 0;
 
-	if(!b)
+	if (!b)
 		return (0);
 	for (; *b != '\0'; b++)
 	{
