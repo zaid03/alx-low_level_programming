@@ -11,30 +11,21 @@ void _div(unsigned long int n);
   */
 void print_binary(unsigned long int n)
 {
-	if (n == 0)
+	int i, count = 0;
+	unsigned long int current;
+
+	for (i = 63; i >= 0; i--)
 	{
-		_putchar('0');
-		return;
+		current = n >> i;
+
+		if (current & 1)
+		{
+			_putchar('1');
+			count++;
+		}
+		else if (count)
+			_putchar('0');
 	}
-
-	_div(n);
-}
-
-/**
-  * _div - checks for
-  * @n: number to check for
-  *
-  * Return: nothing
-  */
-void _div(unsigned long int n)
-{
-	if (n < 1)
-		return;
-
-	_div(n >> 1);
-
-	if (n & 1)
-		_putchar('1');
-	else
+	if (!count)
 		_putchar('0');
 }
