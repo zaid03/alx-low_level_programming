@@ -1,15 +1,21 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 
+void _div(unsigned long int n);
 /**
- * print_binary - prints the binary representation of a number
- * @n: unsigned long int to be printed in binary
- *
- * Return: void
- */
-
+  * print_binary - binary representation of a number
+  * @n: binary number to represent
+  *
+  * Return: Nothing
+  */
 void print_binary(unsigned long int n)
 {
-	if (n > 1)
-		print_binary(n >> 1);
-	_putchar((n & 1) + '0');
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
+
+	_div(n);
 }
