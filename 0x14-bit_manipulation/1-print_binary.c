@@ -1,40 +1,25 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
 
-void _div(unsigned long int n);
 /**
-  * print_binary - binary representation of a number
-  * @n: binary number to represent
-  *
-  * Return: Nothing
-  */
+ * print_binary - function that prints the binary representation of a numbe
+ * @n: number to convert
+ */
 void print_binary(unsigned long int n)
 {
-	if (n == 0)
+	int i, j = 0;
+	unsigned long int curr;
+
+	for (i = 63; i >= 0; i--)
 	{
-		_putchar('0');
-		return;
+		curr = n >> i;
+		if (curr & 1)
+		{
+			_putchar('1');
+			j++;
+		}
+		else if (j)
+			_putchar('0');
 	}
-
-	_div(n);
-}
-
-/**
-  * _div - checks for
-  * @n: number to check for
-  *
-  * Return: nothing
-  */
-void _div(unsigned long int n)
-{
-	if (n < 1)
-		return;
-
-	_div(n >> 1);
-
-	if (n & 1)
-		_putchar('1');
-	else
+	if (!j)
 		_putchar('0');
 }
